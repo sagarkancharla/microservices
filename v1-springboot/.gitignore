@@ -10,6 +10,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-/mvnw
-/mvnw.cmd
+**/mvnw
+**/mvnw.cmd
 
