@@ -15,9 +15,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  profiles:
+    active: prod
 
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
   message: "welcome to eazybank accounts"
