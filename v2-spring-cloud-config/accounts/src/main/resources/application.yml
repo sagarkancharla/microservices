@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: prod
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "welcome to eazybank accounts"
+  contactDetails:
+    name: sagar
+    email: sagar@gmail.com
+  onCallSupport:
+    - 9618396878
+    - 9014867641
+
