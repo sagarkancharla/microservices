@@ -19,11 +19,6 @@ spring:
         #native:
           #search-locations: classpath:/config
           #search-locations: file:/D:/Sagar/docs/config
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 
 encrypt:
   key: e9t0y1u4h8f6j7d6x4n1
