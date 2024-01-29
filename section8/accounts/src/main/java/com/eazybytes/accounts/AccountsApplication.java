@@ -9,11 +9,13 @@ import io.swagger.v3.oas.annotations.info.License;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableConfigurationProperties({AccountsContactInfoDto.class})
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
+@EnableFeignClients
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Accounts microservices RESt API Documentation",
