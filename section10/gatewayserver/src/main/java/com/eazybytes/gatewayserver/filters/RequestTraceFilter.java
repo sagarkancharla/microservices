@@ -31,7 +31,7 @@ public class RequestTraceFilter implements GlobalFilter {
                     filterUtility.getCorrelationId(requestHeaders));
         } else {
             String correlationId = generateCorrelationId();
-            ServerWebExchange webExchange = filterUtility.setCorrelationId(exchange, correlationId);
+            filterUtility.setCorrelationId(exchange, correlationId);
             LOGGER.debug("eazyBank-correlation-id generated in RequestTraceFilter : {}", correlationId);
         }
         return chain.filter(exchange);
