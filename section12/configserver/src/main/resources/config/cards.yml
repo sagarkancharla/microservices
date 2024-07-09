@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "welcome to eazybank cards"
+  contactDetails:
+    name: sagar
+    email: sagar@gmail.com
+  onCallSupport:
+    - 9618396878
+    - 9014867641
+
