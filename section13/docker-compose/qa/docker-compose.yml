@@ -14,7 +14,7 @@ services:
     extends:
       file: common-config.yml
       service: network-deploy-service
-      
+
   keycloak:
     image: quay.io/keycloak/keycloak:24.0.1
     container_name: keycloak
@@ -273,8 +273,12 @@ services:
       timeout: 5s
       retries: 10
       start_period: 10s
+    depends_on:
+      rabbit:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: accounts
+      SPRING_RABBITMQ_HOST: rabbit
     extends:
       file: common-config.yml
       service: microservice-eureka-config
